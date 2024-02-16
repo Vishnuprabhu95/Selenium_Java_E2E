@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" thread-count="3" name="Suite">
+	
+	<listeners>
+		<listener class-name="academy.testComponents.Listeners"></listener>
+	</listeners>
+	
+	
+	<test name="Submit Order">
+		<parameter name="browserName" value="chromeG"/>
+		<classes>
+			<class name="academy.tests.SubmitOrderTest" />
+		</classes>
+	</test>
+	<test name="Error Validations">
+		<parameter name="browserName" value="chromeG"/>
+		<classes>
+			<class name="academy.tests.ErrorValidationTest" />
+		</classes>
+	</test>
+</suite>
