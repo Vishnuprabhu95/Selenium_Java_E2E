@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 72.719 s <<< FAILURE! - in TestSuite
-academy.tests.ErrorValidationTest.IncorrectCredentialValidation  Time elapsed: 1.048 s  <<< FAILURE!
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 79.753 s <<< FAILURE! - in TestSuite
+academy.tests.ErrorValidationTest.IncorrectCredentialValidation  Time elapsed: 1.069 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -32,7 +32,7 @@ java.lang.AssertionError: expected [true] but found [false]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
 
-academy.tests.SubmitOrderTest.OrderHistoryTest[org.testng.TestRunner@45bfd184](1)  Time elapsed: 1.59 s  <<< FAILURE!
+academy.tests.SubmitOrderTest.OrderHistoryTest[org.testng.TestRunner@2d91c739](1)  Time elapsed: 1.231 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -62,7 +62,7 @@ java.lang.AssertionError: expected [true] but found [false]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
 
-academy.tests.ErrorValidationTest.stopDocker  Time elapsed: 44.72 s  <<< FAILURE!
+academy.tests.ErrorValidationTest.stopDocker  Time elapsed: 48.779 s  <<< FAILURE!
 java.lang.RuntimeException: Grid not started
 	at academy.testComponents.DockerManager.waitTill(DockerManager.java:93)
 	at academy.testComponents.DockerManager.actionDocker(DockerManager.java:68)

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-16T17:38:18 IST" name="Suite" finished-at="2024-02-16T17:38:42 IST" duration-ms="24273">
+  <suite started-at="2024-02-16T18:49:26 IST" name="Suite" finished-at="2024-02-16T18:49:56 IST" duration-ms="29890">
     <groups>
     </groups>
-    <test started-at="2024-02-16T17:38:18 IST" name="Submit Order" finished-at="2024-02-16T17:38:39 IST" duration-ms="21292">
+    <test started-at="2024-02-16T18:49:26 IST" name="Submit Order" finished-at="2024-02-16T18:49:49 IST" duration-ms="22576">
       <class name="academy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:18 IST" name="launchApplication" finished-at="2024-02-16T17:38:22 IST" duration-ms="3362" status="PASS">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.SubmitOrderTest@32eff876]" started-at="2024-02-16T18:49:26 IST" name="launchApplication" finished-at="2024-02-16T18:49:31 IST" duration-ms="4914" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:22 IST" name="submitOrder" finished-at="2024-02-16T17:38:38 IST" duration-ms="15925" status="PASS">
+        <test-method signature="submitOrder(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@32eff876]" started-at="2024-02-16T18:49:31 IST" name="submitOrder" finished-at="2024-02-16T18:49:47 IST" duration-ms="15867" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@45bfd184]]>
+                <![CDATA[org.testng.TestRunner@2d91c739]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method signature="OrderHistoryTest(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:38 IST" name="OrderHistoryTest" finished-at="2024-02-16T17:38:39 IST" depends-on-methods="academy.tests.SubmitOrderTest.submitOrder" duration-ms="1368" status="FAIL">
+        <test-method signature="OrderHistoryTest(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@32eff876]" started-at="2024-02-16T18:49:47 IST" name="OrderHistoryTest" finished-at="2024-02-16T18:49:48 IST" depends-on-methods="academy.tests.SubmitOrderTest.submitOrder" duration-ms="964" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@45bfd184]]>
+                <![CDATA[org.testng.TestRunner@2d91c739]]>
               </value>
             </param>
           </params>
@@ -76,19 +76,19 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:39 IST" name="tearDown" finished-at="2024-02-16T17:38:39 IST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.SubmitOrderTest@32eff876]" started-at="2024-02-16T18:49:48 IST" name="tearDown" finished-at="2024-02-16T18:49:49 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- academy.tests.SubmitOrderTest -->
     </test> <!-- Submit Order -->
-    <test started-at="2024-02-16T17:38:18 IST" name="Error Validations" finished-at="2024-02-16T17:38:42 IST" duration-ms="24273">
+    <test started-at="2024-02-16T18:49:26 IST" name="Error Validations" finished-at="2024-02-16T18:49:56 IST" duration-ms="29890">
       <class name="academy.tests.ErrorValidationTest">
-        <test-method is-config="true" signature="startDocker()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:10 IST" name="startDocker" finished-at="2024-02-16T17:38:18 IST" duration-ms="7724" status="PASS">
+        <test-method is-config="true" signature="startDocker()[pri:0, instance:academy.tests.ErrorValidationTest@131774fe]" started-at="2024-02-16T18:49:17 IST" name="startDocker" finished-at="2024-02-16T18:49:26 IST" duration-ms="8909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDocker -->
-        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:18 IST" name="launchApplication" finished-at="2024-02-16T17:38:26 IST" duration-ms="8160" status="PASS">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.ErrorValidationTest@131774fe]" started-at="2024-02-16T18:49:26 IST" name="launchApplication" finished-at="2024-02-16T18:49:40 IST" duration-ms="13638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="IncorrectCredentialValidation()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:26 IST" name="IncorrectCredentialValidation" finished-at="2024-02-16T17:38:27 IST" duration-ms="677" status="FAIL">
+        <test-method signature="IncorrectCredentialValidation()[pri:0, instance:academy.tests.ErrorValidationTest@131774fe]" started-at="2024-02-16T18:49:40 IST" name="IncorrectCredentialValidation" finished-at="2024-02-16T18:49:41 IST" duration-ms="727" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -139,15 +139,15 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IncorrectCredentialValidation -->
-        <test-method signature="productNameErrorValidation()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:27 IST" name="productNameErrorValidation" finished-at="2024-02-16T17:38:41 IST" duration-ms="13958" status="PASS">
+        <test-method signature="productNameErrorValidation()[pri:0, instance:academy.tests.ErrorValidationTest@131774fe]" started-at="2024-02-16T18:49:41 IST" name="productNameErrorValidation" finished-at="2024-02-16T18:49:55 IST" duration-ms="14092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productNameErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:41 IST" name="tearDown" finished-at="2024-02-16T17:38:42 IST" duration-ms="850" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.ErrorValidationTest@131774fe]" started-at="2024-02-16T18:49:55 IST" name="tearDown" finished-at="2024-02-16T18:49:56 IST" duration-ms="702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="stopDocker()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:42 IST" name="stopDocker" finished-at="2024-02-16T17:39:22 IST" duration-ms="40010" status="FAIL">
+        <test-method is-config="true" signature="stopDocker()[pri:0, instance:academy.tests.ErrorValidationTest@131774fe]" started-at="2024-02-16T18:49:56 IST" name="stopDocker" finished-at="2024-02-16T18:50:36 IST" duration-ms="40024" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Grid not started]]>
