@@ -14,7 +14,7 @@
 		</classes>
 	</test>
 	<test name="Error Validations">
-		<parameter name="browserName" value="chromeG"/>
+		<parameter name="browserName" value="firefoxG"/>
 		<classes>
 			<class name="academy.tests.ErrorValidationTest" />
 		</classes>

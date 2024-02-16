@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-16T13:12:18 IST" name="Suite" finished-at="2024-02-16T13:12:57 IST" duration-ms="38424">
+  <suite started-at="2024-02-16T17:34:32 IST" name="Suite" finished-at="2024-02-16T17:35:14 IST" duration-ms="41952">
     <groups>
     </groups>
-    <test started-at="2024-02-16T13:12:18 IST" name="Submit Order" finished-at="2024-02-16T13:12:38 IST" duration-ms="19094">
+    <test started-at="2024-02-16T17:34:32 IST" name="Submit Order" finished-at="2024-02-16T17:34:43 IST" duration-ms="10643">
       <class name="academy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.SubmitOrderTest@4afcd809]" started-at="2024-02-16T13:12:19 IST" name="launchApplication" finished-at="2024-02-16T13:12:21 IST" duration-ms="2805" status="PASS">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.SubmitOrderTest@408d971b]" started-at="2024-02-16T17:34:33 IST" name="launchApplication" finished-at="2024-02-16T17:34:37 IST" duration-ms="4129" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@4afcd809]" started-at="2024-02-16T13:12:21 IST" name="submitOrder" finished-at="2024-02-16T13:12:36 IST" duration-ms="14723" status="PASS">
+        <test-method signature="submitOrder(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@408d971b]" started-at="2024-02-16T17:34:37 IST" name="submitOrder" finished-at="2024-02-16T17:34:41 IST" duration-ms="4274" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e1453ac]]>
+                <![CDATA[org.testng.TestRunner@15330c95]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method signature="OrderHistoryTest(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@4afcd809]" started-at="2024-02-16T13:12:36 IST" name="OrderHistoryTest" finished-at="2024-02-16T13:12:37 IST" depends-on-methods="academy.tests.SubmitOrderTest.submitOrder" duration-ms="993" status="FAIL">
+        <test-method signature="OrderHistoryTest(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@408d971b]" started-at="2024-02-16T17:34:41 IST" name="OrderHistoryTest" finished-at="2024-02-16T17:34:43 IST" depends-on-methods="academy.tests.SubmitOrderTest.submitOrder" duration-ms="1415" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3e1453ac]]>
+                <![CDATA[org.testng.TestRunner@15330c95]]>
               </value>
             </param>
           </params>
@@ -76,15 +76,19 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.SubmitOrderTest@4afcd809]" started-at="2024-02-16T13:12:37 IST" name="tearDown" finished-at="2024-02-16T13:12:38 IST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.SubmitOrderTest@408d971b]" started-at="2024-02-16T17:34:43 IST" name="tearDown" finished-at="2024-02-16T17:34:43 IST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- academy.tests.SubmitOrderTest -->
     </test> <!-- Submit Order -->
-    <test started-at="2024-02-16T13:12:18 IST" name="Error Validations" finished-at="2024-02-16T13:12:57 IST" duration-ms="38424">
+    <test started-at="2024-02-16T17:34:32 IST" name="Error Validations" finished-at="2024-02-16T17:35:14 IST" duration-ms="41952">
       <class name="academy.tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.ErrorValidationTest@367ffa75]" started-at="2024-02-16T13:12:19 IST" name="launchApplication" finished-at="2024-02-16T13:12:21 IST" duration-ms="1894" status="PASS">
+        <test-method is-config="true" signature="startDocker()[pri:0, instance:academy.tests.ErrorValidationTest@fbd1f6]" started-at="2024-02-16T17:34:24 IST" name="startDocker" finished-at="2024-02-16T17:34:32 IST" duration-ms="8199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDocker -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.ErrorValidationTest@fbd1f6]" started-at="2024-02-16T17:34:33 IST" name="launchApplication" finished-at="2024-02-16T17:34:37 IST" duration-ms="4145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +99,7 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="IncorrectCredentialValidation()[pri:0, instance:academy.tests.ErrorValidationTest@367ffa75]" started-at="2024-02-16T13:12:21 IST" name="IncorrectCredentialValidation" finished-at="2024-02-16T13:12:54 IST" duration-ms="33031" status="FAIL">
+        <test-method signature="IncorrectCredentialValidation()[pri:0, instance:academy.tests.ErrorValidationTest@fbd1f6]" started-at="2024-02-16T17:34:37 IST" name="IncorrectCredentialValidation" finished-at="2024-02-16T17:35:11 IST" duration-ms="33917" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class*='flyInOut']"}
@@ -104,9 +108,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [b0958923a631c2fc2ad5091a8beddc62, findElement {using=css selector, value=[class*='flyInOut']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.EQ7KjQ}, goog:chromeOptions: {debuggerAddress: localhost:33327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 114.0.5735.106, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b0958923a631c2fc2ad5091a8beddc62]]>
+Command: [3f73da211111a2bafd81071a6632fda3, findElement {value=[class*='flyInOut'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.OVxTpR}, goog:chromeOptions: {debuggerAddress: localhost:43249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.4:4444/sessio..., se:cdpVersion: 114.0.5735.106, se:vnc: ws://172.20.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f73da211111a2bafd81071a6632fda3]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='flyInOut']"}
@@ -115,9 +119,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [b0958923a631c2fc2ad5091a8beddc62, findElement {using=css selector, value=[class*='flyInOut']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.EQ7KjQ}, goog:chromeOptions: {debuggerAddress: localhost:33327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 114.0.5735.106, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b0958923a631c2fc2ad5091a8beddc62
+Command: [3f73da211111a2bafd81071a6632fda3, findElement {value=[class*='flyInOut'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.OVxTpR}, goog:chromeOptions: {debuggerAddress: localhost:43249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.4:4444/sessio..., se:cdpVersion: 114.0.5735.106, se:vnc: ws://172.20.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f73da211111a2bafd81071a6632fda3
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -135,7 +139,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
 at academy.pageobjects.LandingPage.getErrorMessage(LandingPage.java:48)
 at academy.tests.ErrorValidationTest.IncorrectCredentialValidation(ErrorValidationTest.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -166,14 +170,49 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IncorrectCredentialValidation -->
-        <test-method signature="productNameErrorValidation()[pri:0, instance:academy.tests.ErrorValidationTest@367ffa75]" started-at="2024-02-16T13:12:54 IST" name="productNameErrorValidation" finished-at="2024-02-16T13:12:57 IST" duration-ms="2743" status="PASS">
+        <test-method signature="productNameErrorValidation()[pri:0, instance:academy.tests.ErrorValidationTest@fbd1f6]" started-at="2024-02-16T17:35:11 IST" name="productNameErrorValidation" finished-at="2024-02-16T17:35:14 IST" duration-ms="2898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productNameErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.ErrorValidationTest@367ffa75]" started-at="2024-02-16T13:12:57 IST" name="tearDown" finished-at="2024-02-16T13:12:57 IST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.ErrorValidationTest@fbd1f6]" started-at="2024-02-16T17:35:14 IST" name="tearDown" finished-at="2024-02-16T17:35:14 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="stopDocker()[pri:0, instance:academy.tests.ErrorValidationTest@fbd1f6]" started-at="2024-02-16T17:35:14 IST" name="stopDocker" finished-at="2024-02-16T17:35:54 IST" duration-ms="40010" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Grid not started]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Grid not started
+at academy.testComponents.DockerManager.waitTill(DockerManager.java:94)
+at academy.testComponents.DockerManager.actionDocker(DockerManager.java:69)
+at academy.testComponents.BaseTest.stopDocker(BaseTest.java:114)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:410)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDocker -->
       </class> <!-- academy.tests.ErrorValidationTest -->
     </test> <!-- Error Validations -->
   </suite> <!-- Suite -->

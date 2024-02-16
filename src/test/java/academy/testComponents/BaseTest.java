@@ -17,8 +17,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -33,6 +35,7 @@ public class BaseTest {
 	public WebDriver driver;
 	public LandingPage landingPage;
 	ThreadLocal<WebDriver> driverThread = new ThreadLocal<WebDriver>();
+	public DockerManager dockerManager;
 	
 	public WebDriver initializeDriver(String brow) throws IOException {
 		
@@ -99,5 +102,17 @@ public class BaseTest {
 	public void tearDown() {
 		driver.close();
 	}
+	
+	@BeforeSuite
+	public void startDocker() {
+		dockerManager = new DockerManager();
+		dockerManager.actionDocker("START");
+	}
+	
+	@AfterSuite
+	public void stopDocker() {
+		dockerManager.actionDocker("STOP");
+	}
+	
 	
 }

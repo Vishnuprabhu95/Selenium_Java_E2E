@@ -108,7 +108,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="academy.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="OrderHistoryTest(org.testng.TestRunner@5a4da9e6)">OrderHistoryTest(org.testng.TestRunner@5a4da9e6)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="academy.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="OrderHistoryTest(org.testng.TestRunner@45bfd184)">OrderHistoryTest(org.testng.TestRunner@45bfd184)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -127,7 +127,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="academy.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder(org.testng.TestRunner@5a4da9e6)">submitOrder(org.testng.TestRunner@5a4da9e6)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="academy.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder(org.testng.TestRunner@45bfd184)">submitOrder(org.testng.TestRunner@45bfd184)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -150,12 +150,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="OrderHistoryTest(org.testng.TestRunner@5a4da9e6)">
-                  </a> <!-- OrderHistoryTest(org.testng.TestRunner@5a4da9e6) -->
+                  <a name="OrderHistoryTest(org.testng.TestRunner@45bfd184)">
+                  </a> <!-- OrderHistoryTest(org.testng.TestRunner@45bfd184) -->
                   <span class="method-name">OrderHistoryTest</span>
-                  <span class="parameters">(org.testng.TestRunner@5a4da9e6)</span>
+                  <span class="parameters">(org.testng.TestRunner@45bfd184)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at academy.tests.SubmitOrderTest.OrderHistoryTest(SubmitOrderTest.java:45)
+	at academy.tests.SubmitOrderTest.OrderHistoryTest(SubmitOrderTest.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -199,10 +199,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder(org.testng.TestRunner@5a4da9e6)">
-                  </a> <!-- submitOrder(org.testng.TestRunner@5a4da9e6) -->
+                  <a name="submitOrder(org.testng.TestRunner@45bfd184)">
+                  </a> <!-- submitOrder(org.testng.TestRunner@45bfd184) -->
                   <span class="method-name">submitOrder</span>
-                  <span class="parameters">(org.testng.TestRunner@5a4da9e6)</span>
+                  <span class="parameters">(org.testng.TestRunner@45bfd184)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,16 +231,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;academy.testComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Submit Order&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Submit Order&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chromeG&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;academy.tests.SubmitOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Submit Order --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Error Validations&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Error Validations&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;firefoxG&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;academy.tests.ErrorValidationTest&quot;/&gt;
     &lt;/classes&gt;
@@ -289,24 +291,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'academy.tests.SubmitOrderTest')
-data.setCell(0, 3, 14204);
+data.setCell(0, 3, 15925);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'productNameErrorValidation')
 data.setCell(1, 2, 'academy.tests.ErrorValidationTest')
-data.setCell(1, 3, 13538);
+data.setCell(1, 3, 13958);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'IncorrectCredentialValidation')
-data.setCell(2, 2, 'academy.tests.ErrorValidationTest')
-data.setCell(2, 3, 1085);
+data.setCell(2, 1, 'OrderHistoryTest')
+data.setCell(2, 2, 'academy.tests.SubmitOrderTest')
+data.setCell(2, 3, 1368);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'OrderHistoryTest')
-data.setCell(3, 2, 'academy.tests.SubmitOrderTest')
-data.setCell(3, 3, 848);
+data.setCell(3, 1, 'IncorrectCredentialValidation')
+data.setCell(3, 2, 'academy.tests.ErrorValidationTest')
+data.setCell(3, 3, 677);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -332,77 +334,71 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">academy.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
+              <div class="chronological-class-name">academy.tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startDocker</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academy.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchApplication(chromeG)</span>
+                <span class="method-start">7991 ms</span>
+              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">academy.tests.ErrorValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-test before">
+                <span class="method-name">launchApplication(firefoxG)</span>
+                <span class="method-start">7991 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academy.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrder(org.testng.TestRunner@45bfd184)</span>
+                <span class="method-start">11383 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academy.tests.ErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">IncorrectCredentialValidation</span>
-                <span class="method-start">2446 ms</span>
+                <span class="method-start">16151 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">academy.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">submitOrder(org.testng.TestRunner@5a4da9e6)</span>
-                <span class="method-start">3281 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">academy.tests.ErrorValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">3913 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">3986 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productNameErrorValidation</span>
-                <span class="method-start">6527 ms</span>
+                <span class="method-start">17199 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">academy.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17485 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">17542 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">OrderHistoryTest(org.testng.TestRunner@5a4da9e6)</span>
-                <span class="method-start">19768 ms</span>
+                <span class="method-name">OrderHistoryTest(org.testng.TestRunner@45bfd184)</span>
+                <span class="method-start">27313 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28904 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">academy.tests.ErrorValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20066 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">academy.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20827 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">31157 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">stopDocker</span>
+                <span class="method-start">32024 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -2,16 +2,104 @@
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-15T15:55:16 IST" name="Suite" finished-at="2024-02-15T15:55:37 IST" duration-ms="21104">
+  <suite started-at="2024-02-16T17:38:18 IST" name="Suite" finished-at="2024-02-16T17:38:42 IST" duration-ms="24273">
     <groups>
     </groups>
-    <test started-at="2024-02-15T15:55:16 IST" name="Error Validations" finished-at="2024-02-15T15:55:36 IST" duration-ms="20354">
-      <class name="academy.tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:academy.tests.ErrorValidationTest@38c6f217]" started-at="2024-02-15T15:55:16 IST" name="launchApplication" finished-at="2024-02-15T15:55:18 IST" duration-ms="2445" status="PASS">
+    <test started-at="2024-02-16T17:38:18 IST" name="Submit Order" finished-at="2024-02-16T17:38:39 IST" duration-ms="21292">
+      <class name="academy.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:18 IST" name="launchApplication" finished-at="2024-02-16T17:38:22 IST" duration-ms="3362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromeG]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="IncorrectCredentialValidation()[pri:0, instance:academy.tests.ErrorValidationTest@38c6f217]" started-at="2024-02-15T15:55:18 IST" name="IncorrectCredentialValidation" finished-at="2024-02-15T15:55:20 IST" duration-ms="1085" status="FAIL">
+        <test-method signature="submitOrder(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:22 IST" name="submitOrder" finished-at="2024-02-16T17:38:38 IST" duration-ms="15925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@45bfd184]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method signature="OrderHistoryTest(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:38 IST" name="OrderHistoryTest" finished-at="2024-02-16T17:38:39 IST" depends-on-methods="academy.tests.SubmitOrderTest.submitOrder" duration-ms="1368" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@45bfd184]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at academy.tests.SubmitOrderTest.OrderHistoryTest(SubmitOrderTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.SubmitOrderTest@6dc17b83]" started-at="2024-02-16T17:38:39 IST" name="tearDown" finished-at="2024-02-16T17:38:39 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- academy.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order -->
+    <test started-at="2024-02-16T17:38:18 IST" name="Error Validations" finished-at="2024-02-16T17:38:42 IST" duration-ms="24273">
+      <class name="academy.tests.ErrorValidationTest">
+        <test-method is-config="true" signature="startDocker()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:10 IST" name="startDocker" finished-at="2024-02-16T17:38:18 IST" duration-ms="7724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDocker -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:18 IST" name="launchApplication" finished-at="2024-02-16T17:38:26 IST" duration-ms="8160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="IncorrectCredentialValidation()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:26 IST" name="IncorrectCredentialValidation" finished-at="2024-02-16T17:38:27 IST" duration-ms="677" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -51,101 +139,54 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IncorrectCredentialValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.ErrorValidationTest@38c6f217]" started-at="2024-02-15T15:55:20 IST" name="tearDown" finished-at="2024-02-15T15:55:20 IST" duration-ms="73" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:academy.tests.ErrorValidationTest@38c6f217]" started-at="2024-02-15T15:55:20 IST" name="launchApplication" finished-at="2024-02-15T15:55:23 IST" duration-ms="2541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="productNameErrorValidation()[pri:0, instance:academy.tests.ErrorValidationTest@38c6f217]" started-at="2024-02-15T15:55:23 IST" name="productNameErrorValidation" finished-at="2024-02-15T15:55:36 IST" duration-ms="13538" status="PASS">
+        <test-method signature="productNameErrorValidation()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:27 IST" name="productNameErrorValidation" finished-at="2024-02-16T17:38:41 IST" duration-ms="13958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productNameErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.ErrorValidationTest@38c6f217]" started-at="2024-02-15T15:55:36 IST" name="tearDown" finished-at="2024-02-15T15:55:36 IST" duration-ms="58" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:41 IST" name="tearDown" finished-at="2024-02-16T17:38:42 IST" duration-ms="850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- academy.tests.ErrorValidationTest -->
-    </test> <!-- Error Validations -->
-    <test started-at="2024-02-15T15:55:16 IST" name="Submit Order" finished-at="2024-02-15T15:55:37 IST" duration-ms="21104">
-      <class name="academy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:academy.tests.SubmitOrderTest@7ed7259e]" started-at="2024-02-15T15:55:16 IST" name="launchApplication" finished-at="2024-02-15T15:55:19 IST" duration-ms="3281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@7ed7259e]" started-at="2024-02-15T15:55:19 IST" name="submitOrder" finished-at="2024-02-15T15:55:33 IST" duration-ms="14204" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5a4da9e6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.SubmitOrderTest@7ed7259e]" started-at="2024-02-15T15:55:33 IST" name="tearDown" finished-at="2024-02-15T15:55:34 IST" duration-ms="54" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:academy.tests.SubmitOrderTest@7ed7259e]" started-at="2024-02-15T15:55:34 IST" name="launchApplication" finished-at="2024-02-15T15:55:36 IST" duration-ms="2226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest(org.testng.ITestContext)[pri:0, instance:academy.tests.SubmitOrderTest@7ed7259e]" started-at="2024-02-15T15:55:36 IST" name="OrderHistoryTest" finished-at="2024-02-15T15:55:37 IST" depends-on-methods="academy.tests.SubmitOrderTest.submitOrder" duration-ms="848" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5a4da9e6]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="stopDocker()[pri:0, instance:academy.tests.ErrorValidationTest@3febb011]" started-at="2024-02-16T17:38:42 IST" name="stopDocker" finished-at="2024-02-16T17:39:22 IST" duration-ms="40010" status="FAIL">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Grid not started]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at academy.tests.SubmitOrderTest.OrderHistoryTest(SubmitOrderTest.java:45)
+              <![CDATA[java.lang.RuntimeException: Grid not started
+at academy.testComponents.DockerManager.waitTill(DockerManager.java:93)
+at academy.testComponents.DockerManager.actionDocker(DockerManager.java:68)
+at academy.testComponents.BaseTest.stopDocker(BaseTest.java:114)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:410)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.tests.SubmitOrderTest@7ed7259e]" started-at="2024-02-15T15:55:37 IST" name="tearDown" finished-at="2024-02-15T15:55:37 IST" duration-ms="47" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- academy.tests.SubmitOrderTest -->
-    </test> <!-- Submit Order -->
+        </test-method> <!-- stopDocker -->
+      </class> <!-- academy.tests.ErrorValidationTest -->
+    </test> <!-- Error Validations -->
   </suite> <!-- Suite -->
 </testng-results>

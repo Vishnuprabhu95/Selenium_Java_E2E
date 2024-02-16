@@ -9,10 +9,12 @@
     <classes>
       <class name="academy.tests.SubmitOrderTest">
         <methods>
+          <include name="startDocker"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
           <include name="submitOrder"/>
           <include name="OrderHistoryTest" invocation-numbers="0"/>
+          <include name="stopDocker"/>
         </methods>
       </class> <!-- academy.tests.SubmitOrderTest -->
     </classes>
@@ -22,9 +24,11 @@
     <classes>
       <class name="academy.tests.ErrorValidationTest">
         <methods>
+          <include name="startDocker"/>
           <include name="IncorrectCredentialValidation"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
+          <include name="stopDocker"/>
         </methods>
       </class> <!-- academy.tests.ErrorValidationTest -->
     </classes>
